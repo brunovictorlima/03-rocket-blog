@@ -13,18 +13,22 @@
     <title>The Blog - Um protótipo de Blog</title>
 </head>
 <body>
-    <header>
+    <header class="padding">
         <div class="header margins">
             <div class="logo">
                 <img src="images/logo.svg" alt="The Blog" class="logo-image">
+                <button id="btn">                    
+                </button>
             </div>
             <nav>
-                <ul class="menu">
-                    <li class="item-selected"><a href="">Home</a></li>
-                    <li class="item"><a href="">Sobre</a></li>
-                    <li class="item"><a href="">Categorias</a></li>
-                    <li class="item"><a href="">Contato</a></li>
-                </ul>
+                <div id="menu">
+                    <ul class="menu-list">
+                        <li class="item"><a href="">Home</a></li>
+                        <li class="item"><a href="">Sobre</a></li>
+                        <li class="item"><a href="">Categorias</a></li>
+                        <li class="item"><a href="">Contato</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="search-box">
                 <input type="search" placeholder="Buscar" class="search">
@@ -34,8 +38,8 @@
     </header>
     <section class="section1">
         <article class="article1">
-            <div class="main-article margins">
-                <div class="conteiner">
+            <div class="main-article margins padding">
+                <div class="container">
                     <h1 class="big-title">
                         Veja o guia definitivo para conquistar 
                         seus objetivos como DEV em 2022
@@ -52,7 +56,7 @@
                         </div>
                     </div>
                 </div>        
-                <div class="conteiner">
+                <div class="container">
                     <div class="div-img">
                         <img src="images/featured-image.png" alt="" class="image">
                     </div>
@@ -60,8 +64,8 @@
             </div>
         </article>
     </section>
-    <section class="section2 margins">
-        <div class="conteiner">
+    <section class="section2 margins padding">
+        <div class="container">
             <article class="article2">
                 <img src="images/post-1.png" alt="" class="image">
                 <p class="small-text">Janeiro 04, 2022</p>
@@ -79,7 +83,7 @@
             </article>
             <hr>
         </div>
-        <div class="conteiner1">
+        <div class="container1">
             <article class="article3">
                 <p class="small-text">Janeiro 04, 2022</p>
                 <h2 class="title">
@@ -108,11 +112,12 @@
                     assumenda dolor praesentium?
                 </p>
             </article>
+            <hr>
         </div>
     </section>
-    <section class="section3 margins">
-        <div class="conteiner2">
-            <div class="conteiner3">
+    <section class="section3 margins padding">
+        <div class="container2">
+            <div class="container3">
                 <article class="article3">
                     <div class="div-img">
                         <img src="images/post-2.png" alt="" class="image">
@@ -129,9 +134,11 @@
                         a iste ducimus amet dicta doloribus accusamus esse. Amet ducimus fuga 
                         assumenda dolor praesentium?
                     </p>
+                </article>
+                <hr>
             </div>
-            </article>
-            <div class="conteiner3">
+            
+            <div class="container3">
                 <article class="article4">
                     <div class="div-img">
                         <img src="images/post-3.png" alt="" class="image">
@@ -149,8 +156,9 @@
                         assumenda dolor praesentium?
                     </p>
                 </article>
+                <hr>
             </div>
-            <div class="conteiner3">
+            <div class="container3">
                 <article class="article5">
                     <div class="div-img">
                         <img src="images/post-4.png" alt="" class="image">
@@ -168,6 +176,7 @@
                         assumenda dolor praesentium?
                     </p>
                 </article>
+                <hr>
             </div>
         </div>
     </section>
