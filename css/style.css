@@ -24,7 +24,27 @@ header{
 .logo-image{
     width: 180px;
 }
-
+#btn{
+    display: none;
+}
+#btn.closed{
+    display: none;
+}
+.item{
+    display: inline;
+    font-size: 1.25rem;
+    color: var(--white);
+    padding: 0 1rem;
+}
+.item-selected{
+    display: inline;
+    font-size: 1.25rem;
+    color: var(--white);
+    padding: 0 1rem;
+    font-weight: 700;
+    border-left: solid 3px var(--green);
+    padding-left: 0.25rem;
+}
 
 .search-box{
     display: flex;
@@ -165,11 +185,22 @@ hr{
         float: left;
     }
     #btn{
+        display: block;
         float: right;
         background: url('../images/menu-open.svg');
         background-repeat: no-repeat;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
+        margin-top: 7px;
+        cursor:pointer;
+    }
+    #btn.close{
+        display: block;
+        float: right;
+        background: url('../images/menu-close.svg');
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
         margin-top: 7px;
         cursor:pointer;
     }
@@ -179,6 +210,10 @@ hr{
         z-index: 0;
     }
     #menu{
+        display: none;
+    }
+    #menu.active{
+        display:block;
         position:fixed;
         background-color: var(--purple-bg);
         left: 0;
@@ -198,13 +233,20 @@ hr{
     }
 
     .item{
+        display: block;
         color: var(--white);
-        background-color: red;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px 0 solid var(--dark-bg);
+        padding: 10px 20px;
+        margin: 20px 0;
+        font-size: 20px;
     }
-      
+    .item-selected{
+        display: block;
+        color: var(--white);
+        padding: 10px 20px;
+        margin: 20px 0;
+        font-size: 20px;
+        border-left: none;
+    }      
     .header{
         display: flex;
         flex-direction: column;
